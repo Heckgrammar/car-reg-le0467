@@ -1,4 +1,4 @@
-﻿namespace CarRegTask
+namespace CarRegTask
 {
     internal class Program
     {
@@ -9,7 +9,7 @@
             string carReg = Console.ReadLine();
             while (carReg.Length > 8)
             {
-                string displayMessge = " is not valid";
+                string displayMessge = ($"{carReg} is not valid");
                 Console.Write(displayMessge);
                 carReg = Console.ReadLine();
             }
@@ -21,7 +21,7 @@
             }
             else
             {
-                charge = hours * 2;
+                charge = (hours * 2) + 2;
             }
             Console.WriteLine(charge);
 
